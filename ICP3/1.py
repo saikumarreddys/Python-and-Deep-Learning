@@ -25,10 +25,13 @@ class FullTimeEmployee(Employee):
 
 
 def main():
+
     e1 = Employee('Saikumar', 'reddy', 40, 'Manager')
     e2 = Employee('Ram', 'reddy', 40, 'Developer')
     f1 = FullTimeEmployee('sai', 'reddy', 20, 'Architect')
+    e1.AvgSalary()
     f1.AvgSalary()
+    f1.EmpCount()
 
 
 if __name__=="__main__":

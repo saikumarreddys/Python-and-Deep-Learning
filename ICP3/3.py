@@ -1,13 +1,26 @@
 import numpy as np
 
-# Generating random vector with values in the range of 1 and 15.
-x = np.random.random_integers(1,15,15)
-print(x)
-
 # Replacing max value with zero.
-x[x.argmax()]=0
+def replacemax(y):
 
-print(x)
+    print(np.where(y==np.max(y,axis=1).reshape(-1,1),0,y))
+
+
+
+# Main
+def main():
+    x = np.random.randint(1, 20, 15)
+    print(x)
+    y = x.reshape(3, 5)
+    print(y)
+    replacemax(y)
+
+if __name__=="__main__":
+    main()
+
+
+
+
 
 
 
